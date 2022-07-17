@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+body *:not(textarea) {
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  background: rgb(29,116,133);
+  background: radial-gradient(circle, rgba(29,116,133,1) 0%, rgba(9,33,88,1) 100%, rgba(0,212,255,1) 100%);
+  padding: 20px;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+#mid-content, footer {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+#about, #about a, footer, footer a {
+  color: #eee;
+  font-size: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+#toc-container {
+  padding: 1em;
+}
+
+#toc-container h2 {
+  margin: 0 !important;
+}
+
+#heading-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#toc-container, #heading-container {
+  background: white;
+  border: 2px dashed teal;
+  overflow: auto;
+}
+
+#toc-container code, #heading-container code {
+  padding: 0 5px 2px;
+  font-size: .8em;
+  line-height: 1em;
+  font-weight: 400!important;
+  background: #d0d0d5;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#heading-container h1, #heading-container h2, #heading-container h3, #heading-container h4, #heading-container h5, #heading-container h6 {
+  margin-block: 0px;
+  align-self: center;
+} 
+
+#inputText {
+  height: 400px;
+  resize: none;
+  font-size: 18px;
+  background: #222;
+  color: #eee;
+  padding: 1em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+@media screen and (max-width: 900px) {
+  #inputText {
+    block-size: 200px;
+  }
+}
+
+.copy-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-block: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: green; 
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: none;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background: lightgray;
+  cursor: pointer;
+}
+
+.toc-copy-btn {
+  margin-left: 10px;
+}
+
+.h-item {
+  display: flex;
+  align-items: top;
+}
+
+#para-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-block: 20px;
+  justify-content: center;
+  color: #eee;
+}
+
+#para-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="color"], select {
+  margin-left: 5px;
+  border: 1px solid blue;
+  height: 28px;
+}
+
+#main-heading, #subheading {
+  text-align: center;
+  color: #eee;
+  text-shadow: 0px 0px 10px gold;
+}
+
+#main-heading {
+  font-size: 2.5rem;
+  margin: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#fork-me {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

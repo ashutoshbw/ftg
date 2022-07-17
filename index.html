@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fcc toc project</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <a id="fork-me" href="https://github.com/ashutoshbw314/freecodecamp-toc-maker"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <div id="mid-content">
+      <h1 id="main-heading">freeCodeCamp TOC Maker</h1>
+      <div>
+        <div id="para-wrapper">
+          <div>Number color: <input id="cp-h-num" type="color"></div>
+          <div>Number style: <input id="num-style" checked type="checkbox"/> <label for="num-style">Italic</label></div>
+          <div>Anchor color: <input id="cp-anchor" type="color"></div>
+          <div>Anchor text: 
+            <select id="anchor-select">
+              <option value="#" selected>#</option>
+              <option value="§">§</option>
+              <option value="⚓">⚓</option>
+              <option value="📎">📎</option>
+              <option value="🔗">🔗</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+<textarea id="inputText" autofocus>
+Just type some headings in markdown and see what happens! 
+
+# hello 
+## hello
+</textarea>
+        <div id="toc-container"></div>
+        <div id="heading-container"></div>
+      </div>
+
+      <div id="about">
+        <p>
+          <b>Note</b>: For styling it uses inline CSS styles because attaching external stylesheets/scripts is not approved by the <a href="https://www.freecodecamp.org/news/developer-news-style-guide/" target="_blank">style guide</a>.
+        </p>
+        <h2>Why this tool?</h2>
+        <p>
+          I like TOC and headings with anchors, especially for technical articles. However, freeCodeCamp's blog doesn't have built-in support for this at the time of making it (2022 July). This site's goal is to help freeCodeCamp writers to make it possible with less hassle.
+        </p>
+        <p>
+          If you like it, please tweet about it to let your freeCodeCamp author friends to know about it.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      Made by <a href="https://twitter.com/ashutoshbw" target="_blank"><code>@ashutoshbw</code></a>
+    </footer>
+  </main>
+  <script defer src="main.js"></script>
+</body>
+</html>
