@@ -293,5 +293,9 @@ function handleMarkdownText() {
 txtArea.addEventListener("input", handleMarkdownText);
 
 handleMarkdownText();
+
+// On first render Chrome unfortunately doesn't calculate the paddings of TOC
+// 100% accurately. If a little bit later a 2nd render happens, the paddings are
+// then corrected. 
 setTimeout(handleMarkdownText, 100);
 
