@@ -42,7 +42,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  .wrapper {
+  .tool-wrapper {
     grid-template-columns: 1fr;
   }
 }
