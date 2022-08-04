@@ -49,25 +49,42 @@
         <div id="toc-container"></div>
         <div id="heading-container"></div>
       </div>
-
-      <div id="about">
-        <h2>Why TOC and headings with anchors and numbers? 🤔 </h2>
-        <ul>
-          <li>TOC gives a bird's eye view of the article. It allows the readers to jump to a particular section they are interested in from there.</li>
-          <li>Numbers before headings make the hierarchical position of a section clear.</li>
-          <li>Clicking on an anchor makes it super easy to both jump to that section and get its link in the URL so we can easily refer to it from elsewhere if needed.</li>
-        </ul>
-        <p>
-          However, as of July 2022, there is no automatic way to do these things in the freeCodeCamp blog editor. So I've made this to help freeCodeCamp authors generate beautiful TOC and headings with inlined CSS so they can copy and paste it into HTML cards to replicate it instantly.
-        </p>
-        <p>
-          <b>Note</b>: For styling it uses inline CSS styles because attaching external stylesheets/scripts is not approved by the <a href="https://www.freecodecamp.org/news/developer-news-style-guide/" target="_blank">style guide</a>.
-        </p>
+      <div id="info">
+        <details>
+          <summary><h2>Writter's Guide</h2></summary>
+          <ol>
+            <li>Write your headings in Markdown above get live results!</li>
+            <li>Copy your TOC's HTML by clicking the copy button near it.</li>
+            <li>In your freeCodeCamp blog editor, at your desired position embed a HTML card by clicking the "+" button.</li>
+            <li>Paste the copied text into that HTML card. Click outside to get an approximate preview. Note that this text has a HTML comment above that includes the original markdown. It is there to help you recreate the TOC without hassle in case you want to edit some parts.</li>
+            <li>In a similar way copy paste the headings to recreate them on freeCodeCamp blog editor at your positions you want.</li>
+          </ol>
+        </details>
+        <details>
+          <summary><h2>Editor's Guide</h2></summary>
+          <ol>
+            <li>In freeCodeCamp blog editor, open the HTML card of the Table of contents and copy the markdown text there at the very top inside an HTML comment.</li>
+            <li>Paste that into the textarea in <a href="https://ashutoshbw.github.io/ftg/">freeCodeCamp TOC Generator</a>. The TOC and headings will be recreated from that markdown.</li>
+            <li>Now edit the markdown to update the TOC and headings.</li>
+            <li>Click the copy button near the Table of contents to copy the updated HTML along with the updated markdown placed at the top in an HTML comment to make further editing easier.</li>
+            <li>Go to freeCodeCamp blog editor and replace the HTML content of Table of contents with the copied text.</li>
+            <li>Now Go back to <a href="https://ashutoshbw.github.io/ftg/">freeCodeCamp TOC Generator</a> and copy paste only the headings that you updated in a simliar way.</li>
+          </ol>
+        </details>
+        <details>
+          <summary><h2>Why this tool?</h2></summary>
+          <p>
+            As of July 2022, there is no automatic way to do these things in freeCodeCamp blog editor. So I've made this to help freeCodeCamp authors automate some boring stuff.
+          </p>
+          <p>
+            <b>Note</b>: For styling it uses inline styles because attaching external stylesheets/scripts is not approved by the <a href="https://www.freecodecamp.org/news/developer-news-style-guide/" target="_blank">style guide</a>.
+          </p>
+        </details>
       </div>
     </div>
 
     <footer>
-      Made by a freeCodeCamp <a href="https://www.freecodecamp.org/news/author/ashutoshbw/" target="_blank">author</a>
+      Made by <a href="https://www.freecodecamp.org/news/author/ashutoshbw/" target="_blank">Ashutosh Biswas</a>
     </footer>
   </main>
   <script defer src="main.js"></script>

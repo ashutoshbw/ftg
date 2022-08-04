@@ -7,8 +7,7 @@ body *:not(textarea) {
 }
 
 main {
-  background: rgb(29,116,133);
-  background: radial-gradient(circle, rgba(29,116,133,1) 0%, rgba(9,33,88,1) 100%, rgba(0,212,255,1) 100%);
+  background: #444;
   padding: 20px;
   margin: 0;
   height: 100vh;
@@ -23,6 +22,7 @@ main {
 #mid-content, footer {
   max-width: 1300px;
   margin: 0 auto;
+  width: 100%;
 }
 
 footer {
@@ -30,9 +30,14 @@ footer {
   font-weight: bold;
 }
 
-#about, #about a, footer, footer a {
+#info, #info a, footer, footer a {
   color: #eee;
-  font-size: 1rem;
+}
+
+#info {
+  font-size: 1.3rem;
+  margin-block: 3rem;
+  margin-inline: 2rem;
 }
 
 .tool-wrapper {
@@ -42,6 +47,9 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  #mid-content {
+    min-width: auto;
+  }
   .tool-wrapper {
     grid-template-columns: 1fr;
   }
@@ -148,17 +156,17 @@ input[type="color"], select {
   height: 28px;
 }
 
-#main-heading, #subheading {
+#main-heading {
   text-align: center;
   color: #eee;
-  text-shadow: 0px 0px 10px gold;
 }
 
 #main-heading {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 1rem;
   width: 70%;
   margin: 0 auto;
+  word-wrap: break-word;
 }
 
 #fork-me {
@@ -166,4 +174,12 @@ input[type="color"], select {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+summary {
+  margin-block: 1rem;
+}
+
+summary h2 {
+  display: inline;
 }
