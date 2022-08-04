@@ -89,7 +89,7 @@ function genToc(headings, firstTime) {
 
   if (firstTime) {
     const toc = elt("div", undefined, "toc");
-    const h2 = elt("h2", "toc-heading");
+    const h2 = elt("h2");
 
     h2.textContent = "Table of contents";
     toc.append(h2);
