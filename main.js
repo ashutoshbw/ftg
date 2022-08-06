@@ -89,11 +89,15 @@ function genToc(headings, firstTime) {
 
   if (firstTime) {
     const toc = elt("div", undefined, "toc");
+    const credit = elt("span");
+    credit.innerHTML = `<a href="https://ashutoshbw.github.io/ftg/" target="_blank">Made with FTG</a>`;
+    credit.style = "font-size: 9px; float: right";
     const h2 = elt("h2");
 
     h2.textContent = "Table of contents";
     toc.append(h2);
     toc.append(ul);
+    toc.append(credit);
 
     return toc;
   } else {
