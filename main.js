@@ -91,7 +91,7 @@ function genToc(headings, firstTime) {
     const toc = elt("div", undefined, "toc");
     const credit = elt("span");
     credit.innerHTML = `<a href="https://ashutoshbw.github.io/ftg/" target="_blank">Made with FTG</a>`;
-    credit.style = "font-size: 9px; float: right; line-height: 18px;";
+    credit.style = "font-size: 9px; float: right; line-height: 12px;";
     const h2 = elt("h2");
 
     h2.textContent = "Table of contents";
