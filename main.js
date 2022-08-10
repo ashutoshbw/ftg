@@ -94,7 +94,7 @@ function genToc(headings, firstTime) {
     credit.style = "font-size: 9px; float: right; line-height: 12px;";
     const h2 = elt("h2");
 
-    h2.textContent = "Table of contents";
+    h2.textContent = "Table of Contents";
     toc.append(h2);
     toc.append(ul);
     toc.append(credit);
@@ -181,7 +181,7 @@ function getCopyBtn(text, isItForToc) {
 
   copyBtn.addEventListener("click", (e) => {
     const textWithComment = `<!--
-Generator: https://ftm.github.io/
+Generator: https://ashutoshbw.github.io/ftg/
 
 ${inputText.value.trim()}
 -->
